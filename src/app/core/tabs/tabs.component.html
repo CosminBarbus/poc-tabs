@@ -1,0 +1,5 @@
+<h2>Navigation </h2>
+<nav *ngIf="tabs$ | async as tabs">
+    <a [routerLink]="tab.link" routerLinkActive="active" *ngFor="let tab of tabs">{{tab.name}}</a>
+</nav>
+
