@@ -15,6 +15,7 @@ import { ItemDefinitionComponent } from './pages/item-definition/item-definition
 import { ItemExecutionComponent } from './pages/item-execution/item-execution.component';
 import { DefinitionTasksComponent } from './pages/definition-tasks/definition-tasks.component';
 import { ExecutionTasksComponent } from './pages/execution-tasks/execution-tasks.component';
+import { TabComponent } from './core/tab/tab.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ExecutionTasksComponent } from './pages/execution-tasks/execution-tasks
     HomeComponent,
     LeftNavigationComponent,
     ItemExecutionComponent,
-    ExecutionTasksComponent
+    ExecutionTasksComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,

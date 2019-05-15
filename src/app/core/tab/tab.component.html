@@ -1,0 +1,4 @@
+<a [routerLink]="tab.link" routerLinkActive="active" >
+    <p>{{tab.name}}</p> 
+    <div class="close-icon" (click)="onTabClose(tab, $event)">X</div>
+</a>

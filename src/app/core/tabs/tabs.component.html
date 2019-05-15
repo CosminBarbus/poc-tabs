@@ -1,5 +1,6 @@
 <h2>Navigation </h2>
-<nav *ngIf="tabs$ | async as tabs">
-    <a [routerLink]="tab.link" routerLinkActive="active" *ngFor="let tab of tabs">{{tab.name}}</a>
+<nav>
+    <app-tab [tab]="tab" (removeTab)="onRemoveTab($event)" (removeCurrentTab)="onRemoveCurrentTab($event)"
+     *ngFor="let tab of tabs$; trackBy:trackByFunction">
+    </app-tab>
 </nav>
-
